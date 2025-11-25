@@ -8,9 +8,9 @@ def main():
     )
 
     resp = client.chat.completions.create(
-        model="llama3.2:3b",
+        model="llama3",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": "You are a cricket umpire."},
             {"role": "user", "content": "Explain LBW in cricket in 2 sentences."},
         ],
         temperature=0.3,
