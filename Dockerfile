@@ -1,7 +1,7 @@
 FROM ollama/ollama:latest
 
 # Default model (can be overridden at runtime)
-ENV OLLAMA_MODEL=llama4
+ENV OLLAMA_MODEL=llama4:scout
 
 # Copy our entrypoint script into the image
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
