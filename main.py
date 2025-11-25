@@ -1,5 +1,6 @@
 from openai import OpenAI
 
+
 def main():
     # Point the OpenAI client at Ollama's OpenAI-compatible endpoint
     client = OpenAI(
@@ -8,9 +9,9 @@ def main():
     )
 
     resp = client.chat.completions.create(
-        model="llama3",
+        model="llama4",
         messages=[
-            {"role": "system", "content": "You are a cricket umpire."},
+            {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "Explain LBW in cricket in 2 sentences."},
         ],
         temperature=0.3,
